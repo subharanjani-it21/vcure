@@ -29,7 +29,7 @@
     text-align: center;
     color: rgb(77, 75, 75);
     font-family: 'Rubik', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: .8px;
     line-height: 1.8rem;
 }
@@ -72,7 +72,7 @@
     border-radius: 30px;
 }
 .info-fa-icon {
-    color: #2C96FF;
+    color: #7ed7a4;
     font-size: 24px;
 }
 /* Responsive */

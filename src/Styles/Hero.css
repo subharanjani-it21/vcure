@@ -41,7 +41,7 @@
     border: 1px solid transparent;
     border-radius: 28px;
     outline: transparent;
-    background-color: #1A8EFD;
+    background-color: #7ed7a4;
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
     letter-spacing: .8px;
@@ -49,9 +49,9 @@
     transition: all .4s ease;
 }
 .text-appointment-btn:hover {
-    color: #1A8EFD;
+    color: #7ed7a4;
     background-color: transparent;
-    border: 1px solid #1A8EFD;
+    border: 1px solid #7ed7a4;
 }
 .text-stats {
     margin-top: 40px;
@@ -71,7 +71,7 @@
 }
 .text-stats-container p:first-child {
     margin-bottom: 8px;
-    color: #1A8EFD;
+    color: #7ed7a4;
     font-family: 'Rubik', sans-serif;
     font-size: 32px;
     font-weight: bold;
@@ -97,7 +97,7 @@
     color: white;
     border: 3px solid white;
     border-radius: 50%;
-    background-color: #1A8EFD;
+    background-color: #7ed7a4;
     position: fixed;
     bottom: 50px;
     right: 50px;

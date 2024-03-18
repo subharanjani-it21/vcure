@@ -8,10 +8,12 @@ import {
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import Chatbot from "./Chatbot"; // Import the Chatbot component
 
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const [showChatbot, setShowChatbot] = useState(false);
 
   const openNav = () => {
     setNav(!nav);
@@ -19,19 +21,24 @@ function Navbar() {
 
   const handleChatBtnClick = () => {
     if (!isButtonDisabled) {
-      toast.info("Experiencing high traffic, Please wait a moment.", {
-        position: toast.POSITION.TOP_CENTER,
-        onOpen: () => setIsButtonDisabled(true),
-        onClose: () => setIsButtonDisabled(false),
-      });
+      setShowChatbot(true);
+      // toast.info("Experiencing high traffic, Please wait a moment.", {
+      //   position: toast.POSITION.TOP_CENTER,
+      //   onOpen: () => setIsButtonDisabled(true),
+      //   onClose: () => setIsButtonDisabled(false),
+      // });
     }
+  };
+
+  const closeChatbot = () => {
+    setShowChatbot(false);
   };
 
   return (
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Health <span className="navbar-sign">+</span>
+          VCURE <span className="navbar-sign"></span>
         </Link>
       </h1>
 
@@ -121,6 +128,9 @@ function Navbar() {
           className="hamb-icon"
         />
       </div>
+
+      {/* Chatbot Popup */}
+      {showChatbot && <Chatbot onClose={closeChatbot} />}
     </div>
   );
 }
