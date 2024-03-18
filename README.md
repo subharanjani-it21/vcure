@@ -1,6 +1,6 @@
 # Vcure
 
-Welcome to the Health Plus project repository! This is a React-based website aimed at providing accessible and personalized healthcare services to users. The website allows users to connect with expert doctors, schedule appointments, and receive expert medical advice and in our website we have livechat chatbot which display the patients history and it store using unique id and used for further treatments.
+Welcome to the Vcure project repository! This is a React-based website aimed at providing accessible and personalized healthcare services to users. The website allows users to connect with expert doctors, schedule appointments, and receive expert medical advice and in our livechat chatbot we can collect the patients history and store in unique ID for futher treatments.
 
 ## Project Overview
 
